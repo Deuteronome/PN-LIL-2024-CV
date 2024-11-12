@@ -18,15 +18,16 @@
 }
 
 header {
-    color: white;
     background-color: rgb(33, 89, 153);
     height: 17vh;
     border: #000000c5 solid 2px;
     padding: 5%;
-}
-
-h1, h2 {
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 2.5vh;
 }
 
 i {
@@ -37,5 +38,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("/asset/FondCV.jpg");
+    background-image: url("../asset/FondCV.jpg");
+    color: white;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
