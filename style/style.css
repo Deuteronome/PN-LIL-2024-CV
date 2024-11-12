@@ -1,0 +1,41 @@
+
+#flexContainer {
+    display: flex;
+}
+
+#divBODY {
+    flex: 1;
+    border: 5px solid rgb(14, 14, 14);
+    margin: 5vh;
+    padding: 5vw;
+    
+}
+
+#SIDEBAR{
+    padding: 2vw;
+    background-color: #3369dfc5;
+    border-left: rgb(27, 27, 27) 2px solid;
+}
+
+header {
+    color: white;
+    background-color: rgb(33, 89, 153);
+    height: 17vh;
+    border: #000000c5 solid 2px;
+    padding: 5%;
+}
+
+h1, h2 {
+    width: fit-content;
+}
+
+i {
+    color: rgb(96, 150, 132);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("/asset/FondCV.jpg");
+}
