@@ -1,0 +1,52 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   /* Palette de couleur pour mon CV */
+   --color1:#A6AEBF;
+   --color2:#C5D3E8;
+   --color3:#D0E8C5;
+   --color4:#FFF8DE;
+}
+
+body {
+    background-color: var(--color3);
+}
+
+#info {
+    width: 50%;
+    margin: 15px;
+    padding: 20px;
+    background-color: var(--color4);
+    color: var(--color1);
+    border: var(--color1) solid 6px;
+}
+
+#info>a {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    width: 50%;
+    aspect-ratio: 4/1;
+    background-color: var(--color1);
+    color: var(--color4);
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin: 10px 0;
+}
+
+#info>h1 {
+
+}
+
+#info>a>img {
+    height: 100%;
+    display: block;
+}
+
+#info>a>p {
+    padding-left: 25px;
+}
