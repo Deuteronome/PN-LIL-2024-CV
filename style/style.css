@@ -14,13 +14,53 @@ body {
     background-color: var(--color3);
 }
 
-#info {
-    width: 50%;
+#titre {
+    font-size: 30px;
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#soft {
+    width: 40%;
+}
+
+li {
+    font-size: 20px;
+}
+
+#comp {
+
+}
+
+#form {
+
+}
+
+#photo {
+    width: 20%;
+    aspect-ratio: 1;
+    border: var(--color1) solid 6px;
+    border-radius: 50%;
+    background-image: url('../asset/Hyene.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 25%;
+}
+
+.zone {
     margin: 15px;
     padding: 20px;
     background-color: var(--color4);
     color: var(--color1);
     border: var(--color1) solid 6px;
+    border-radius: 15px;
+}
+
+#info {
+    width: 25%;
+ 
 }
 
 #info>a {
@@ -29,13 +69,20 @@ body {
     justify-content: start;
     align-items: center;
     text-decoration: none;
-    width: 50%;
+    width: 100%;
     aspect-ratio: 4/1;
     background-color: var(--color1);
     color: var(--color4);
     border-radius: 5px;
     padding: 15px 15px;
     margin: 10px 0;
+    align-items: center;
+}
+
+#info>a:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+    border: var(--color1) 1px solid;
 }
 
 #info>h1 {
