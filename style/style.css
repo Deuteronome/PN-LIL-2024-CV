@@ -8,6 +8,8 @@
     border: 5px solid rgb(14, 14, 14);
     margin: 5vh;
     padding: 5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
     
 }
 
@@ -15,22 +17,28 @@
     padding: 2vw;
     background-color: #3369dfc5;
     border-left: rgb(27, 27, 27) 2px solid;
+    
+}
+
+#SIDEBAR a {
+    color: white;
 }
 
 header {
-    background-color: rgb(33, 89, 153);
+    background-color: #215999;
+    background-image: url("../asset/FondCV.jpg");
     height: 17vh;
     border: #000000c5 solid 2px;
     padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     font-size: 2.5vh;
 }
 
-i {
+i a{
     color: rgb(96, 150, 132);
 }
 
@@ -39,6 +47,54 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-image: url("../asset/FondCV.jpg");
+    background-attachment: fixed;
     color: white;
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
+
+#SIDEBAR li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vh;
+}
+
+#emailIcon {
+    background-image: url(../asset/email-address-icon.png);
+    width: 2vw;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1vw;
+}
+
+#gitIcon {
+    background-image: url(../asset/github-logo.png);
+    width: 2vw;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1vw;
+}
+
+#caraPort {
+    background-image: url(../asset/caraFavIcon.ico);
+    width: 2vw;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1vw;
+}
+
+#paintBrush {
+    background-image: url(../asset/paint-brush-drawing-icon.png);
+    width: 12vw;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+#divBODY ul {
+    padding-bottom: 1vh;
+}
+
