@@ -5,23 +5,22 @@
     font-family: Arial, Helvetica, sans-serif;
 
     /*Palette de couleurs du CV*/
-    --color1: #a9b7c6;
+    --color1: rgb(169, 183, 198);
     --color2: rgb(122,161,210);
     --color3: rgb(113,128,150);
-    --color4: rgb(181,196,222);
-
-}
+    --color4: rgb(181,196,222);}
 
 body{background-color:var(--color4);
 }   
+
 #infos{
-    width: 100% ;
-    margin: 15px;
+    width: 98% ;
+    /*margin: 15px;
     padding: 15px;
     background-color: var(--color1);
     color: rgb(0, 0, 0);
     border: solid 2px;
-    border-radius: 20px;}
+    border-radius: 20px;*/}
 
 #infos>a{
     display: flex;
@@ -32,17 +31,61 @@ body{background-color:var(--color4);
     background-color: var(--color3);
     border-radius: 5px;
     padding: 7px 15px;
-    margin: 10px O;
-    
+    margin: 10px O;}
+
+#infos>a:hover {
+    background-color: var(--color1);
+    color: rgb(0, 0, 0);            /*ou var(--color3)*/
+    border: var(--color3) 1px solid;
+    transition-duration: 0.5s;
 }
 
 #info>a>img{
     height: 100%;
-    display: block;
-}
+    display: block;}
 
 #infos>a>p{
     display: inline-block;
     margin: auto;
-    padding-right: 20px;
+    padding-right: 20px;}
+
+.zone{
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--color1);
+    color: rgb(0, 0, 0);
+    border: solid 2px;
+    border-radius: 20px;
+
 }
+
+a{text-decoration: none;
+color: var(--color3);}
+
+/*#BasDePage>div{
+   display: inline-block;
+   border: none;
+   background-color: var(--color4);
+   width: 31.5%;
+}*/
+
+p{margin: 20px;
+}
+ul{padding: 20px;}
+
+.Etablissements{
+    font-weight: 800;
+    color: var(--color3);
+}
+
+#photo{
+    width: 7%;
+    aspect-ratio: 1;
+    border: solid black 2px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    background-image: url("..//assets/ImageProfilTemporaire.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
