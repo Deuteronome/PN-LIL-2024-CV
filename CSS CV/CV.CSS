@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #eef1f4);
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+    transition: background 0.5s, color 0.5s;
+}
+
+.cv-container {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cv-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3db7b1;
+    padding-bottom: 15px;
+}
+
+.header-info h1 {
+    font-size: 2.4rem;
+    color: #2c3e50;
+}
+
+.subheading {
+    color: #3db7b1;
+    font-weight: 500;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #3db7b1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+button {
+    background: #3db7b1;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #2c3e50;
+    transform: scale(1.1);
+}
+
+section h2 {
+    font-size: 1.6rem;
+    color: #3db7b1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-left: 4px solid #3db7b1;
+    padding-left: 10px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.dark-theme {
+    background: #2c3e50;
+    color: #f0f4f8;
+}
+
+.dark-theme .cv-container {
+    background: #34495e;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme a {
+    color: #1abc9c;
+}
+
+.dark-theme h1 {
+    color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info ul {
+        text-align: center;
+    }
+}

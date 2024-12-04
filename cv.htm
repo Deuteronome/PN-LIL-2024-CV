@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Aziz Hmamsi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="cv.js" defer></script>
+    <style>
+        /* Style général de la page */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e2ddd4 ; /* Fond plus clair */
+            color: #333; /* Texte sombre pour un bon contraste */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce pour les changements */
+        }
+
+        /* Conteneur principal */
+        .cv-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; /* Fond blanc pour le container */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        /* En-tête avec photo et informations */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff; /* Fond blanc pour l'en-tête */
+            color: #333; /* Texte sombre */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+
+        .header-info p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+            color: #7d7d7d; /* Gris doux */
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            color: #555; /* Gris foncé */
+        }
+
+        .contact-info button {
+            background-color: #3498db; /* Bleu dynamique pour le bouton */
+            color: #fff;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-info button:hover {
+            background-color: #2980b9; /* Bleu plus foncé au survol */
+        }
+
+        /* Espace photo */
+        .photo-container {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Sections */
+        section {
+            margin: 30px 0;
+        }
+
+        section h2 {
+            font-size: 1.9rem;
+            color: #3498db; /* Bleu dynamique pour les titres */
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        section p, section ul li {
+            font-size: 1.1rem;
+            color: #555; /* Texte sombre pour un contraste avec le fond clair */
+            line-height: 1.6;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #888;
+        }
+
+        /* Mode sombre */
+        body.sombre-mode {
+            background-color: #121212;
+            color: #0d0c0c;
+        }
+
+        body.sombre-mode .header {
+            background-color: #1a252f;
+        }
+
+        body.sombre-mode .contact-info button {
+            background-color: #f39c12;
+        }
+
+        body.sombre-mode .contact-info button:hover {
+            background-color: #e67e22;
+        }
+
+        body.sombre-mode footer {
+            color: #aaa;
+        }
+
+        body.sombre-mode section h2 {
+            color: #f39c12; /* Accent orange vif en mode sombre */
+        }
+
+        body.sombre-mode section p, body.sombre-mode section ul li {
+            color: #100f0f;
+        }
+
+        body.sombre-mode .header-info h1 {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="header">
+            <div class="photo-container">
+                <img src="aziz.jpg" alt="Photo de profil">
+            </div>
+            <div class="header-info">
+                <h1>Aziz Hmamsi</h1>
+                <p class="subheading">Étudiant en informatique, passionné de cybersécurité</p>
+            </div>
+            <div class="contact-info">
+                <ul>
+                    <li><span class="icon">📧</span><a href="mailto:azizhmamsi3@gmail.com">azizhmamsi3@gmail.com</a></li>
+                    <li><span class="icon">📞</span><a href="tel:+33744257025">+33 7 44 25 70 25</a></li>
+                    <li><span class="icon">📍</span> 59650 Villeneuve-d'Ascq</li>
+                </ul>
+                <button id="toggle-theme">Mode Sombre</button>
+            </div>
+        </header>
+        <main>
+            <section class="profile">
+                <h2>Profil</h2>
+                <p>Étudiant en informatique passionné par la cybersécurité, désireux de contribuer à la sécurité des entreprises avec des compétences techniques et un esprit analytique. Motivé pour rejoindre une équipe dynamique dans le domaine de la sécurité des systèmes d’information, je cherche à mettre en pratique mes connaissances acquises tout en continuant à me former.</p>
+            </section>
+            <section class="education">
+                <h2>Diplômes et Formations</h2>
+                <div class="education-list">
+                    <div>
+                        <h3>Prépa Numérique</h3>
+                        <p>Depuis octobre 2024 - E2C Lille</p>
+                    </div>
+                    <div>
+                        <h3>BTS Management</h3>
+                        <p>2022-2023 - Université Paris</p>
+                        
+                    </div>
+                    <div>
+                        <h3>BAC Professionnel Commerce</h3>
+                        <p>2019-2021 - Centre de formation Lille</p> 
+                    </div>
+                    <div>
+                        <h3>CAP Commerce</h3>
+                        <p>2017-2018 - Centre de formation Lille</p>
+                    </div>
+                </div>
+                <p><strong>Compétences maîtrisées </strong> : HTML, CSS, JavaScript, gestion de projet, cybersécurité (notions de base).</p>
+            </section>
+            <section class="experience">
+                <h2>Expériences professionnelles</h2>
+                <ul>
+                    <li>
+                        <strong>Entrepreneur/Freelance (Depuis 2023) - Micro-entreprise individuelle, Lille</strong>
+                        <p>Création d’une micro-entreprise dans le domaine de la vente de véhicules d'occasion (import-export). Gestion complète d'un site de e-commerce, collaboration avec d'autres freelances pour gérer la relation client, l'importation et la vente de véhicules.</p>
+                    </li>
+                    <li>
+                        <strong>Conseiller de vente automobile (Déc. 2022 - Avril 2023) - VellParis, France</strong>
+                        <p>Conseiller de vente pour des véhicules neufs et d’occasion, responsable de l’ensemble du processus de vente, de l’accueil client à la finalisation de la vente.</p>
+                    </li>
+                    <li>
+                        <strong>Télévendeur (Juillet 2022) - Commej'aime, Lille</strong>
+                        <p>Prise de commandes et gestion des demandes clients par téléphone. Enregistrement des informations de commande et suivi des relances clients.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h2>Langues</h2>
+                <ul>
+                    <li><span class="icon">🇮🇹</span>  Italien: Natif</li>
+                    
+                    <li><span class="icon">🇬🇧</span>  Anglais: Intermédiaire</li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2>Atouts</h2>
+                <ul>
+                    <li><span class="icon">🔧</span>  Résolution des problèmes techniques</li>
+                    <li><span class="icon">📚</span>  Autonome et capacité d'apprentissage rapide</li>
+                    <li><span class="icon">💡</span>  Esprit analytique et créatif</li>
+                    <li><span class="icon">📈</span>  Compétences en gestion de projet</li>
+                    <li><span class="icon">💻</span>  Notions de cybersécurité</li>
+                </ul>
+            </section>
+            <section class="interests">
+                <h2>Centres d'intérêt</h2>
+                <ul>
+                    <li><span class="icon">📱</span>  Réseaux sociaux : Marketing et communication digitale</li>
+                    <li><span class="icon">🥊</span>  Kickboxing : Passion pour les sports de combat</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Aziz Hmamsi</p>
+        </footer>
+    </div>
+</body>
+</html>
