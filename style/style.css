@@ -10,11 +10,14 @@
     --color3: rgb(113,128,150);
     --color4: rgb(181,196,222);}
 
-body{background-color:var(--color4);
+body{
+    background-color:var(--color4);
 }   
 
 #infos{
     width: 98% ;
+    display: block;
+
     /*margin: 15px;
     padding: 15px;
     background-color: var(--color1);
@@ -22,34 +25,76 @@ body{background-color:var(--color4);
     border: solid 2px;
     border-radius: 20px;*/}
 
-#infos>a{
+#liens>a{
     display: flex;
     text-decoration: none;
     color: var(--color1);
-    width: 20%;
+    width: 30%;
     aspect-ratio: 4/1;
     background-color: var(--color3);
     border-radius: 5px;
     padding: 7px 15px;
-    margin: 10px O;}
+    margin: 10px O;
+}
 
-#infos>a:hover {
-    background-color: var(--color1);
+#start{
+    display: flex;
+    flex-direction: row;
+}
+
+#infos>h1{
+    position: relative;
+    color: rgb(1, 18, 113);
+}
+
+#liens>a:hover {
+    background-color: var(--color4);
     color: rgb(0, 0, 0);            /*ou var(--color3)*/
     border: var(--color3) 1px solid;
     transition-duration: 0.5s;
 }
 
-#info>a>img{
+#liens>a>img{
     height: 100%;
     display: block;}
 
-#infos>a>p{
+#liens>a>p{
     display: inline-block;
     margin: auto;
-    padding-right: 20px;}
+    padding-right: 20px;
+}
 
 .zone{
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--color1);
+    color: rgb(0, 0, 0);
+    border: solid 2px;
+    border-radius: 20px;
+}
+#part1{
+    display: flex;
+    flex-direction: column;
+}
+
+#part1>#entête{
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--color1);
+    color: rgb(1, 18, 113);
+    border: solid 2px black;
+    border-radius: 20px;
+    width: fit-content;
+}
+#part1>#accroche{
+    width: 40%;
+}
+
+#part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
     margin: 15px;
     padding: 15px;
     background-color: var(--color1);
@@ -59,19 +104,36 @@ body{background-color:var(--color4);
 
 }
 
-a{text-decoration: none;
-color: var(--color3);}
 
-/*#BasDePage>div{
-   display: inline-block;
-   border: none;
-   background-color: var(--color4);
-   width: 31.5%;
-}*/
+#part3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
-p{margin: 20px;
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--color1);
+    color: rgb(0, 0, 0);
+    border: solid 2px;
+    border-radius: 20px;
 }
-ul{padding: 20px;}
+#langues{
+    margin-left: 70px;
+}
+
+#part25{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color3);}
+
+p{
+    margin: 20px;}
+ul{
+    padding: 20px;}
 
 .Etablissements{
     font-weight: 800;
@@ -79,13 +141,27 @@ ul{padding: 20px;}
 }
 
 #photo{
-    width: 7%;
-    aspect-ratio: 1;
-    border: solid black 2px;
-    border-radius: 50%;
     background-color: var(--color1);
     background-image: url("..//assets/ImageProfilTemporaire.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: black;
+
+    width: 20%;
+    aspect-ratio: 1;
+    border: solid black 2px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
+#liens{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h3{
+    font-size:140%;
+    color: rgb(1, 18, 113);
+}
