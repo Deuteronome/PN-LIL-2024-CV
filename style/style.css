@@ -15,6 +15,12 @@ body {
     background-color: black;
 }
 
+#intro {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 .zone {
     margin: 15px;
     padding: 15px;
@@ -85,7 +91,10 @@ body {
     text-align: center;
 }
 
-.zone2 {
+#zone1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #comp {
@@ -110,4 +119,36 @@ body {
 
 #centre {
     padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#centre1 {
+    display: flex;
+    border: #000B58 solid 4px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#centre1_liste {
+    display: flex;
+    border: #000B58 solid 4px;
+    margin-right: 20%;
+    justify-content: end;
+}
+
+#centre2 {
+    display: flex;
+    border: #000B58 solid 4px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+#centre2_liste {
+    display: flex;
+    border: #000B58 solid 4px;
+    margin-right: 20%;
+    justify-content: end;
+
 }
