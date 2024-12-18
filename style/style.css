@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Rugged;
+    src: url(./Super_Rugged.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #290808, #520c0c);
+    color: white;
+    height: 15vh;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Logo img {
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#Titre {
+    font-size: 1.8rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex: 1;
+    text-align: center;
+}
+
+#NavLinks {
+    display: flex;
+}
+
+#NavLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#NavLinks a:hover {
+    background-color: #f4f4f4;
+    color: #333;
+    transform: scale(1.1);
+}
+
+html {
+    background: linear-gradient(#ffffff, #8a8a8a);
+    font-family: Rugged, sans-serif;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#Titre {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#Container {
+    display: flex;
+    width: 50%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Sidebar {
+    width: 25%;
+    background-color: rgb(65, 20, 20);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#Sidebar p {
+    margin: 10px 0;
+}
+
+#Photo {
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #d13c3c; /* Couleur de la barre */
+    margin: 20px 0; /* Espacement au-dessus et en-dessous de la barre */
+    width: 90%; /* Largeur de la barre */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px; /* Bords arrondis */
+}
+
+#GithubLink,
+#MailLink,
+#DiscordDiv,
+#PhoneDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#PhoneIcon,
+#Github,
+#DiscordIcon,
+#MailIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#Nom,
+#Mail {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s, transform 0.3s;
+}
+
+#E2CLink {
+    text-decoration: none;
+    color: black;
+}
+
+#Nom:hover,
+#E2CLink:hover,
+#Mail:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+#Box {
+    width: 75%;
+    padding: 20px;
+    padding-bottom: 50%;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: rgb(211, 49, 49);
+    text-decoration: underline;
+}
+
+#Box > div > p,
+#Box > div > a {
+    margin-left: 15px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Nouvelles règles pour les compétences */
+#Box ul > li {
+    font-size: 1rem;
+    color: black;
+    margin-top: 10px;
+}
+
+#Box ul > li > ul > li {
+    font-size: 0.9em;
+    color: #3b3b3b;
+    margin-left: 20px;
+}
+
+#Box ul > li > ul > li > ul > li {
+    font-size: 0.8em;
+    color: #3b3b3b;
+    margin-left: 40px;
+}
