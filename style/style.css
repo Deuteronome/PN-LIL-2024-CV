@@ -1,4 +1,9 @@
-* {
+@font-face {
+    font-family: "custom";
+    src: url('../asset/Copyduck.ttf');
+}
+
+*{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -8,38 +13,47 @@
    --color2:#C5D3E8;
    --color3:#D0E8C5;
    --color4:#FFF8DE;
+
+
 }
 
 body {
     background-color: var(--color3);
 }
 
+#test,#lazone {
+    display: flex;
+    flex-direction: row;
+}
+
+#jsp {
+    display: flex;
+    margin-right: 10px;
+    height: 50%;
+}
+
+
 #titre {
     font-size: 30px;
-    width: 70%; 
+    width: 73%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    font-family: 'custom', sans-serif;
+    top: 5vh;
 }
 
-#soft {
-    width: 40%;
-}
-
-li {
-    font-size: 20px;
-}
-
-#comp {
-
-}
-
-#form {
+#sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color2);
 
 }
 
 #photo {
-    width: 20%;
+    width: 30vh;
     aspect-ratio: 1;
     border: var(--color1) solid 6px;
     border-radius: 50%;
@@ -47,6 +61,14 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 25%;
+}
+
+#soft {
+    width: 80%;
+}
+
+li {
+    font-size: 20px;
 }
 
 .zone {
@@ -83,10 +105,6 @@ li {
     background-color: var(--color4);
     color: var(--color1);
     border: var(--color1) 1px solid;
-}
-
-#info>h1 {
-
 }
 
 #info>a>img {
